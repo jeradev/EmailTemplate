@@ -63,14 +63,15 @@
       .padding {
         padding: 15px;
       }
-      .three-columns{
+      
+      .three-columns {
         display: flex;
         flex-direction: row;
       }
+
       .three-columns .content {
         font-size: 15px;
         line-height: 20px;
-        float: left;
       }
 
       .content img {
@@ -90,21 +91,56 @@
         font-size: 15px;
       }
 
-    .outer .social img:hover{
+      .outer .social img:hover {
         transform: scale(1.2);
       }
-    .outer button:hover{
+      .outer button:hover {
         transform: scale(1.1);
-    }
-
-      @media screen and (max-width: 600px) {
       }
 
-      @media screen and (max-width: 400px) {
-          .three-columns{
-            flex-direction: column;
-          }
+      
+
+      @media screen and (max-width: 700px) {
+        .padding{
+          background-color: #ffffff;
+        }
+        
+        .wrapper{
+          background-color: #ffffff;
+        }
+
+        .body{
+          background-color: #ffffff;
+        }
+
+        .webkit{
+          background-color: #ffffff;
+        }
       }
+
+      
+
+      @media screen and (max-width: 450px) {
+        img.third-img-last {
+          width: 200px !important;
+          max-width: 200px !important;
+          transition: 0.4s;
+        }
+
+        img.third-img {
+          width: 200px !important;
+          max-width: 200px !important;
+          transition: 0.4s;
+        }        
+
+        .three-columns {
+          flex-direction: column;
+          align-items: center;
+          background-color: #f6f9fc;
+        }  
+        
+      }   
+      
     </style>
   </head>
   <body>
@@ -120,7 +156,7 @@
                       background-color: #388cda;
                       padding: 0;
                       text-align: center;
-                     "
+                    "
                   >
                     <a href="#">
                       <img
@@ -136,13 +172,13 @@
                 <tr>
                   <td>
                     <a href="#"
-                      ><img 
+                      ><img
                         src="https://cdn.pixabay.com/photo/2017/07/31/11/46/laptop-2557586_960_720.jpg"
                         alt="coding"
                         title="banner"
                         width="600px"
                         height="350px"
-                        style="border-radius: 0px 0px 30px 30px;"
+                        style="border-radius: 0px 0px 30px 30px"
                       />
                     </a>
                   </td>
@@ -162,6 +198,7 @@
                                       <td>
                                         <a href="#"
                                           ><img
+                                            class="third-img"
                                             src="https://i.ibb.co/wrjSpMV/html.png"
                                             alt="html logo"
                                             title="html logo"
@@ -180,7 +217,7 @@
                                         >
                                           HTML Course
                                         </p>
-                                        <p style="font-size: 12px;">
+                                        <p style="font-size: 12px">
                                           With our <b>HTML</b> pack you can
                                           learn how to build great Email
                                           Templates very fast and easy!
@@ -200,8 +237,9 @@
                                       <td>
                                         <a href="#"
                                           ><img
+                                            class="third-img"
                                             src="https://i.ibb.co/mGg61sy/css.png"
-                                            alt="html logo"
+                                            alt="css logo"
                                             title="css logo"
                                             width="109px"
                                             style="max-width: 150px"
@@ -218,7 +256,7 @@
                                         >
                                           CSS Course
                                         </p>
-                                        <p style="font-size: 12px;">
+                                        <p style="font-size: 12px">
                                           With our <b>CSS</b> pack you can learn
                                           how to design your HTML Email Template
                                           very easy!
@@ -238,8 +276,9 @@
                                       <td>
                                         <a href="#"
                                           ><img
+                                            class="third-img-last"
                                             src="https://i.ibb.co/qjR648t/js.png"
-                                            alt="html logo"
+                                            alt="js logo"
                                             title="js logo"
                                             width="110px"
                                             style="max-width: 150px"
@@ -256,7 +295,7 @@
                                         >
                                           JS Course
                                         </p>
-                                        <p style="font-size: 12px;">
+                                        <p style="font-size: 12px">
                                           With our <b>JS</b> pack you can add
                                           functionalities to your HTML Email
                                           Templates very fast and easy!
@@ -280,17 +319,50 @@
                     <table width="100%" style="border-spacing: 0">
                       <tr>
                         <td
-                          style="background-color: #278ae6;padding:15px;text-align:center;border-radius: 30px 30px 0px 0px;"
+                          style="
+                            background-color: #278ae6;
+                            padding: 15px;
+                            text-align: center;
+                            border-radius: 30px 30px 0px 0px;
+                          "
                         >
                           <p
-                            style="font-size: 12px;color: #ffffff;margin-bottom: 13px;"
-                          > 
+                            style="
+                              font-size: 12px;
+                              color: #ffffff;
+                              margin-bottom: 13px;
+                            "
+                          >
                             Connect with us
-                          </p >
-                          <a href="#" class="social" style="padding-left: 5px;"><img src="https://i.ibb.co/4dfM8zL/fb-logo.png" alt="fb-logo" title="facebook logo" width="30px"></a>
-                          <a href="#" class="social" style="padding-left: 5px;"><img src="https://i.ibb.co/Lh79mHC/ig-logo.png" alt="ig-logo" title="instagram logo" width="30px"></a>
-                          <a href="#" class="social" style="padding-left: 5px;"><img src="https://i.ibb.co/vY1w8g6/tw-logo.png" alt="tw-logo" title="twitter logo" width="30px"></a>
-                          <a href="#" class="social" style="padding-left: 5px;"><img src="https://i.ibb.co/sjspH99/li-logo.png" alt="li-logo" title="linked-in logo" width="30px"></a>
+                          </p>
+                          <a href="#" class="social" style="padding-left: 5px"
+                            ><img
+                              src="https://i.ibb.co/4dfM8zL/fb-logo.png"
+                              alt="fb-logo"
+                              title="facebook logo"
+                              width="30px"
+                          /></a>
+                          <a href="#" class="social" style="padding-left: 5px"
+                            ><img
+                              src="https://i.ibb.co/Lh79mHC/ig-logo.png"
+                              alt="ig-logo"
+                              title="instagram logo"
+                              width="30px"
+                          /></a>
+                          <a href="#" class="social" style="padding-left: 5px"
+                            ><img
+                              src="https://i.ibb.co/vY1w8g6/tw-logo.png"
+                              alt="tw-logo"
+                              title="twitter logo"
+                              width="30px"
+                          /></a>
+                          <a href="#" class="social" style="padding-left: 5px"
+                            ><img
+                              src="https://i.ibb.co/sjspH99/li-logo.png"
+                              alt="li-logo"
+                              title="linked-in logo"
+                              width="30px"
+                          /></a>
                         </td>
                       </tr>
                     </table>
@@ -301,32 +373,83 @@
           </tr>
 
           <tr>
-              <td style="background-color: #efefef;">
-                  <table width="100%" style="border-spacing: 0;">
+            <td style="background-color: #efefef">
+              <table width="100%" style="border-spacing: 0">
+                <tr>
+                  <td style="padding: 20px; text-align: center">
+                    <a href="#"
+                      ><img
+                        src="https://i.ibb.co/C9cNHtD/logo2.png"
+                        alt="logo2"
+                        width="160px"
+                    /></a>
+                    <p
+                      style="
+                        font-size: 12px;
+                        margin-top: 18px;
+                        margin-bottom: 16px;
+                      "
+                    >
+                      I hope I was able to help you. Below you will find our
+                      details, so if you have any questions regarding these 3
+                      areas, do not hesitate to write to us.
+                    </p>
+                    <p
+                      style="
+                        font-size: 15;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                      "
+                    >
+                      135 Street Wall Street, State 444111
+                    </p>
+                    <button
+                      style="
+                        border-radius: 30px;
+                        border-style: none;
+                        padding: 8px;
+                        border-color: #efefef;
+                        background-color: #278ae6;
+                      "
+                    >
+                      <a
+                        href="mailto:jeradev@hotmail.com"
+                        style="font-size: 12px; color: #ffffff"
+                        >Write to us here</a
+                      >
+                    </button>
+                  </td>
+                </tr>
 
-                    <tr>
-                        <td style="padding:20px;text-align:center;">
-                            <a href="#"><img src="https://i.ibb.co/C9cNHtD/logo2.png" alt="logo2" width="160px"></a>
-                            <p style="font-size: 12px;margin-top: 18px;margin-bottom: 16px;">I hope I was able to help you. Below you will find our details, so if you have any questions regarding these 3 areas, do not hesitate to write to us.</p>
-                            <p style="font-size: 15;font-weight: bold;padding-bottom: 20px;">135 Street Wall Street, State 444111</p>
-                            <button style="border-radius: 30px; border-style: none; padding: 8px;border-color: #efefef ; background-color: #278ae6"><a href="mailto:jeradev@hotmail.com" style="font-size: 12px;color: #ffffff;">Write to us here</a></button>
-                        </td>
-                    </tr>
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        padding-bottom: 10px;
+                        padding-top: 25px;
+                        text-align: center;
+                      "
+                    >
+                      <a
+                        href="#"
+                        style="font-size: 10px; text-decoration: underline"
+                        >UNSUBSCRIBE</a
+                      >
+                    </p>
+                  </td>
+                </tr>
 
-                    <tr>
-                        <td>
-                            <p style="padding-bottom:10px;padding-top: 25px;text-align: center;"><a href="#" style="font-size: 10px;text-decoration:underline;">UNSUBSCRIBE</a></p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td
-                        style="background-color: #278ae6;padding:15px;text-align:center;"
-                      ></td>
-                    </tr>
-
-                  </table>
-              </td>
+                <tr>
+                  <td
+                    style="
+                      background-color: #278ae6;
+                      padding: 15px;
+                      text-align: center;
+                    "
+                  ></td>
+                </tr>
+              </table>
+            </td>
           </tr>
         </table>
       </div>
