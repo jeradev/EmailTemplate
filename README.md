@@ -1,4 +1,4 @@
 # emailTemplate
 My first Email Template - Content Developer
 
-***Template available at: https://jeradev.github.io/emailTemplate/  (requires updates - responsive)
+***Template available [here](https://razvanjega.github.io/emailTemplate/)
